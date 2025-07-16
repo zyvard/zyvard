@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zyvard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/X6dISrp.png" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: radial-gradient(ellipse at center, #1e0033 0%, #0e001c 100%);
+      }
+      .text-pearl {
+        color: #f8f8ff;
+      }
+      .hover\:scale-105:hover {
+        transform: scale(1.05);
+      }
+      .transition-transform {
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="text-pearl font-sans">
+    <!-- Header -->
+    <header class="flex items-center justify-between px-10 py-6 shadow-lg bg-opacity-10 backdrop-blur-sm text-lg">
+      <div>
+        <img src="https://i.imgur.com/X6dISrp.png" alt="Zyvard Logo" class="w-12" />
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#contact" class="text-base px-5 py-2 rounded-full border border-white hover:bg-white hover:text-black transition transition-transform hover:scale-105">Contact Us</a>
+        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center transition-transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zM12 12a4 4 0 100-8 4 4 0 000 8z" />
+          </svg>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center transition-transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-[90vh] flex flex-col items-center justify-center text-center px-8">
+      <img src="https://i.imgur.com/zD7TYxw.png" alt="Zyvard Logo Center" class="w-44 mb-10" />
+      <p class="text-4xl md:text-5xl font-semibold text-pearl leading-tight">
+        Your <span class="text-white">privacy</span>. <br />
+        Your <span class="text-white">control</span>. <br />
+        No <span class="text-white">compromises</span>.
+      </p>
+      <a href="#contact" class="text-lg font-semibold px-6 py-3 mt-8 rounded-full border border-white hover:bg-white hover:text-black transition transition-transform hover:scale-105">Check us out</a>
+    </section>
+
+    <!-- Footer Contact Anchor -->
+    <div class="h-40"></div>
+    <footer id="contact" class="text-center text-sm text-purple-500 pb-10">
+      &copy; 2025 Zyvard. All rights reserved.
+    </footer>
+  </body>
+</html>
+
